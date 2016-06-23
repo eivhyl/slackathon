@@ -13,14 +13,15 @@ router.get('/', function(req, res, next) {
 var ADDRESS = "b0:b4:48:c9:74:80";
 var connected = new Promise(function(resolve, reject) {
         SensorTag.discoverByAddress(ADDRESS, function(tag) {
-            resolve(tag)
-        })
+            resolve(tag);
+        });
     }
     ).then(function(tag) {
     new Promise(function(resolve, reject) {
         tag.connectAndSetup(function() {
-            resolve(tag) })
-    })
+            resolve(tag);
+        });
+    });
 });
 
 //==============================================================================
@@ -68,7 +69,7 @@ sensor.then(function(tag) {
         if(objectTemp > 25) {
             log("You're so hot");
         }
-    })
+    });
 });
 
 //==============================================================================
