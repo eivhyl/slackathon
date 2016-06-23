@@ -24,7 +24,8 @@
     "express": "~4.13.1",
     "jade": "~1.11.0",
     "mongodb": "^2.1.16",
-    "morgan": "~1.6.1"
+    "morgan": "~1.6.1",
+    "sensortag": "^1.2.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",
