@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +18,18 @@
   "homepage": "https://github.com/eivhyl/slackathon#readme",
   "description": "",
   "dependencies": {
-    "express": "^4.14.0",
+    "body-parser": "^1.15.0",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "mongodb": "^2.1.16",
+    "morgan": "~1.6.1",
     "sensortag": "^1.2.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.0",
+    "supertest": "^1.2.0"
   }
 }
